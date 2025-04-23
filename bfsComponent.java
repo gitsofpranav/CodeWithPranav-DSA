@@ -10,7 +10,7 @@ public class bfsComponent {
         }
     }
 
-    //Component BFS CODE...
+    //Component  Graph BFS CODE...
     public static void bfs(ArrayList<Edge> []graph){
         boolean []vis = new boolean[graph.length];
         for(int i=0; i<graph.length; i++){
