@@ -33,6 +33,7 @@ public class kosarajuAlgorithm  {
     }
     
     public static void kosarajuAlo( ArrayList<Edge> [] graph, int V){
+        //Step 1 (Get nodes in stack) Topological Sort
         Stack<Integer> st = new Stack<>();
         boolean []vis = new boolean[graph.length];
         for(int i=0; i<graph.length; i++){
