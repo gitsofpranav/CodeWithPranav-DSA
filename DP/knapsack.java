@@ -42,6 +42,7 @@ public class knapsack {
     }
 
     // Build DP table
+    //here i = n and j  =  W
     for(int i = 1; i <= n; i++){
         for(int j = 1; j <= W; j++){
             if(wt[i - 1] <= j){
