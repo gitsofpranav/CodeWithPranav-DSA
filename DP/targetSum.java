@@ -1,6 +1,7 @@
 public class targetSum {
     static Boolean dp[][];
     static boolean dpp[][];
+    //memoization
     public static boolean isPresent(int []arr, int size, int sum){
         if(sum == 0) return true;
         if(size == 0) return false;
