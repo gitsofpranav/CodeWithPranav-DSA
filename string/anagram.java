@@ -48,3 +48,4 @@ public class anagram {
         System.out.println(isAmagram2(s1, s2));
     }
 }
+
