@@ -4,7 +4,7 @@ public class lcString {
         char []a = x.toCharArray();
         char []b = y.toCharArray();
         dp = new int[n+1][m+1];
-        int maxLen = Integer.MIN_VALUE;
+        int maxLen = 0;
         
         for(int i=1; i<n+1; i++){
             for(int j=1; j<m+1; j++){
