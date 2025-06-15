@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     private boolean check(int val, int p, int[] nums){
         int i=0, n=nums.length;
