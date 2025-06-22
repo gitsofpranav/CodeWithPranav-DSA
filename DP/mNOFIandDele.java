@@ -15,11 +15,9 @@ public class mNOFIandDele {
             }
         }
 
-        int len = dp[n][m];
-        int fLen = n-len;
-        int sLen = m-len;
+        
 
-        return fLen+sLen;
+        return n - dp[n][m] + m - dp[n][m];
     }
     
     public static void main(String[] args) {
