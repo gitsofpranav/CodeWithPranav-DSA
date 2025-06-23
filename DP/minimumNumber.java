@@ -14,6 +14,8 @@ public class minimumNumber {
             }
         }
         return n-dp[n][n];
+
+    
     }
     public static void main(String[] args) {
         String s = "aebcbda";
