@@ -5,7 +5,7 @@ public class mcm {
         }
 
         int min = Integer.MAX_VALUE;
-        for(int k=i; k<=j-1; k++){
+        for(int k=i; k<j; k++){
             int tempAns = slove(arr, i, k) + slove(arr,k+1, j) + (arr[i-1] * arr[k] * arr[j]);
             if(tempAns < min){
                 min = tempAns;
