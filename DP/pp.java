@@ -1,5 +1,7 @@
 public class pp {
     static int dp[][];
+    static int left;
+    static int right;
     public static boolean isPalindrome(String s,int i,int j){
         while(i<j){
             if(s.charAt(i) != s.charAt(j)){
@@ -21,7 +23,15 @@ public class pp {
             return dp[i][j];
         }
         for(int k=i; k<j; k++){
-            int temp = solve(s, i, k) + solve(s, k+1, j) + 1;
+
+             int left = (dp[i][k] != -1) ? dp[i][k] : solve(s, i, k);
+            dp[i][k] = left;
+
+             int right = (dp[k+1][j] != -1) ? dp[k+1][j] : solve(s, k+1, j);
+            dp[k+1][j] = right;
+
+
+            int temp = left + right + 1;
             ans = Math.min(ans, temp);
         }
         return  dp[i][j] = ans;
